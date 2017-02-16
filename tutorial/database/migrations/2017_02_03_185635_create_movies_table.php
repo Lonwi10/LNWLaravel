@@ -13,9 +13,16 @@ class CreateMoviesTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('movies', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('year', 8);
+            $table->string('director', 64);
+            $table->string('poster', 8);
+            $table->boolean('rented')->default(false);
+            $table->text('synopsis');
             $table->timestamps();
+
         });
     }
 
@@ -26,6 +33,6 @@ class CreateMoviesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('movies');
     }
 }
