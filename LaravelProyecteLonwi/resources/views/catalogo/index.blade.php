@@ -6,10 +6,10 @@
 <div class="row">
 
     @foreach( $arrayChampions as $key => $champions)
-    <div class="col-xs-6 col-sm-4 col-md-3 text-center">
+    <div class="col-sm-4 text-center">
 
-        <a href="{{ url('/catalogo/' . $champions['nombre'] ) }}">
-            <img src="{{$champions['poster']}}" style="height:200px"/>
+        <a href="{{ url('/catalogo/' . $champions['id'] ) }}">
+            <img src="{{$champions['poster']}}" style="height:200px "/>
             <h4 style="min-height:45px;margin:5px 0 10px 0">
                 {{$champions['nombre']}}
             </h4>

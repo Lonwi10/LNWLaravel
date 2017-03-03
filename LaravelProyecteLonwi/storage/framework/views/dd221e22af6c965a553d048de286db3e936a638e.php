@@ -7,7 +7,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title text-center">
-					<span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 					Añadir campeon
 				</h3>
 			</div>

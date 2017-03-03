@@ -12,7 +12,7 @@
         <h1><?php echo e($champions["nombre"]); ?></h1>
         <h2>Rol: <b><?php echo e($champions["rol"]); ?></b></h2>
         <h2>Tier: <b><?php echo e($champions["tier"]); ?></b></h2>
-        <button type="button" class="btn btn-warning" onclick="location.href='<?php echo e(url('/')); ?>/catalog/<?php echo e($id); ?>/edit'">
+        <button type="button" class="btn btn-warning" onclick="location.href='<?php echo e(url('/')); ?>/catalogo/<?php echo e($id); ?>/edit'">
             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Editar champion</button>
 
     </div>
